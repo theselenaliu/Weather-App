@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="src/style.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Weather App</h1>
+			<h2>Current Time</h2>
+			<br />
+			<div class="form-container">
+				<form id="searchForm">
+					<div class="form-group">
+						<label for="exampleInputEmail1"
+							>Search for weather in your city</label
+						>
+						<br />
+						<div class="row">
+							<div class="col-9">
+								<input
+									type="search"
+									class="form-control"
+									id="search"
+									aria-describedby="emailHelp"
+									placeholder="Enter city"
+								/>
+							</div>
+							<div class="col-3">
+								<button type="submit" class="btn btn-primary">Submit</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<br />
+			<div class="weather-container">
+				<div class="current-weather-container">
+					<div class="row">
+						<div class="col"></div>
+						<div class="col"></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col currentCity" id="currentCity">Sydney</div>
+					<div class="col currentCity">
+						☀️ <span id="temperature">25</span>
+						<span>
+							<a href=" " class="temperature" id="currentCelsius">°C |</a>
+							<a href=" " class="temperature" id="currentFahreinheit"
+								>°F</a
+							></span
+						>
+					</div>
+				</div>
+				<div class="row">
+					<div class="timestamp" id="currentCityTime">Sydney</div>
+				</div>
+				<br />
+				<div class="forecast-container">
+					<div class="row">
+						<div class="col"><h2>5 Day Forecast</h2></div>
+						<div class="col"></div>
+					</div>
+					<div class="row">
+						<div class="col">Monday</div>
+						<div class="col">☀️ 25°C</div>
+					</div>
+					<div class="row">
+						<div class="col">Tuesday</div>
+						<div class="col">🌤 25°C</div>
+					</div>
+					<div class="row">
+						<div class="col">Wednesday</div>
+						<div class="col">🌥 25°C</div>
+					</div>
+					<div class="row">
+						<div class="col">Thursday</div>
+						<div class="col">☀️ 25°C</div>
+					</div>
+					<div class="row">
+						<div class="col">Friday</div>
+						<div class="col">☀️ 25°C</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="src/index.js"></script>
+	</body>
+</html>
