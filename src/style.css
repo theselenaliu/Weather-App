@@ -75,7 +75,8 @@ h2 {
 	font-display: top;
 }
 .footnote {
-	text-align: center;
 	font-size: 8px;
 	color: grey;
+	margin: 0 auto;
+	text-align: center;
 }
